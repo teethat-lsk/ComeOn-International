@@ -1,14 +1,13 @@
 <template>
-  <BackDrop is-active="true">
-    <div class="relative w-1/2">
+    <div class="relative w-1/2 ">
       <img
-        class="absolute"
+        class="absolute z-20"
         src="~/assets/images/popup/contact-popup-logo.png"
         alt="contact-popup-logo"
       />
       helloworld
+    <BackDrop is-active="true" class="absolute"/>
     </div>
-  </BackDrop>
 </template>
 
 <script setup>
