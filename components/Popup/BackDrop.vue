@@ -1,5 +1,5 @@
 <template>
-  <div v-if="isActive" class="w-full h-full bg-black opacity-70">
+  <div v-if="isActive" class="w-screen h-screen bg-black opacity-70">
     <slot />
   </div>
 </template>
