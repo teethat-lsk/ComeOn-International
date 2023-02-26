@@ -1,7 +1,7 @@
 <template>
   <div class="relative">
-    <CatalogPopup :is-active="catalogPopupActive" class="absolute z-10" />
-    <ContactPopup :is-active="contactPopupActive" class="absolute z-10" />
+    <CatalogPopup v-if="catalogPopupActive" class="absolute" />
+    <ContactPopup v-if="contactPopupActive" class="absolute" />
     <TopBar @buttonClicked="(type) => enablePopup(type)" class="sticky top-0" />
     <section>
       <Landing />
@@ -10,10 +10,10 @@
 </template>
 
 <script setup>
-import TopBar from './components/TopBar.vue';
-import Landing from './components/Landing.vue';
-import CatalogPopup from './components/Popup/CatalogPopup.vue';
-import ContactPopup from './components/Popup/ContactPopup.vue';
+import TopBar from '~/components/TopBar.vue';
+import Landing from '~/components/Landing.vue';
+import CatalogPopup from '~/components/Popup/CatalogPopup.vue';
+import ContactPopup from '~/components/Popup/ContactPopup.vue';
 
 const freezeScrolling = (isEnabled) => {
   if (isEnabled) {
