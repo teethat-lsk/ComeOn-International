@@ -1,12 +1,13 @@
 <template>
   <div class="relative">
-    <CatalogPopup v-if="catalogPopupActive" class="absolute" />
-    <ContactPopup v-if="contactPopupActive" class="absolute" />
-    <TopBar @buttonClicked="(type) => enablePopup(type)" class="sticky top-0" />
+    <CatalogPopup @closePopup="disablePopup" v-if="catalogPopupActive" class="absolute" />
+    <ContactPopup @closePopup="disablePopup" v-if="contactPopupActive" class="absolute" />
+    <TopBar @buttonClicked="(type) => enablePopup(type)"  class="sticky top-0" />
     <section>
       <Landing />
     </section>
   </div>
+  
 </template>
 
 <script setup>
@@ -14,6 +15,7 @@ import TopBar from '~/components/TopBar.vue';
 import Landing from '~/components/Landing.vue';
 import CatalogPopup from '~/components/Popup/CatalogPopup.vue';
 import ContactPopup from '~/components/Popup/ContactPopup.vue';
+
 
 const freezeScrolling = (isEnabled) => {
   if (isEnabled) {
@@ -38,7 +40,13 @@ const disablePopup = () => {
   catalogPopupActive.value = false;
   contactPopupActive.value = false;
 };
+
+const scrollTo = (position) => {
+  document.getElementById(position).scrollIntoView(true)
+}
+
 </script>
+
 
 <style scoped>
 section {
