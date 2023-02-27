@@ -1,15 +1,16 @@
 <template>
-  <div class="relative bg-secondary">
-    <CatalogPopup v-if="catalogPopupActive" class="absolute" />
-    <ContactPopup v-if="contactPopupActive" class="absolute" />
-    <TopBar @buttonClicked="(type) => enablePopup(type)" class="sticky top-0" />
-    <section class="px-12">
+  <div class="relative">
+    <CatalogPopup @closePopup="disablePopup" v-if="catalogPopupActive" class="absolute" />
+    <ContactPopup @closePopup="disablePopup" v-if="contactPopupActive" class="absolute" />
+    <TopBar @buttonClicked="(type) => enablePopup(type)"  class="sticky top-0" />
+    <section>
       <Landing />
       <Divider />
       <CategoryList />
       <Divider />
     </section>
   </div>
+  
 </template>
 
 <script setup>
@@ -20,6 +21,7 @@ import CatalogPopup from '~/components/Popup/CatalogPopup.vue';
 import ContactPopup from '~/components/Popup/ContactPopup.vue';
 import CategoryCard from '~~/components/CategoryCard.vue';
 import CategoryList from '~~/components/CategoryList.vue';
+
 
 const freezeScrolling = (isEnabled) => {
   if (isEnabled) {
@@ -44,7 +46,13 @@ const disablePopup = () => {
   catalogPopupActive.value = false;
   contactPopupActive.value = false;
 };
+
+const scrollTo = (position) => {
+  document.getElementById(position).scrollIntoView(true)
+}
+
 </script>
+
 
 <style scoped>
 section {

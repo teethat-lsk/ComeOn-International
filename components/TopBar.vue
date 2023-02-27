@@ -1,7 +1,7 @@
 <template>
-  <nav class="flex items-center bg-primary-red w-screen h-max gap-20 py-5 px-5">
+  <nav class="flex items-center bg-primary-red w-screen h-max gap-20 py-5 px-5 z-10 shadow-sm shadow-black/60">
     <div class="flex-1 justify-start items-center">
-      <img src="~/assets/images/comeOn-logo.png" alt="ComeOn-Logo" />
+      <img @click="scrollTo('TOP')" src="~/assets/images/navbar-logo.png" alt="ComeOn-Logo" class=" w-[7rem]" />
     </div>
     <div class="flex-1 flex gap-4 justify-end items-center">
       <button @click="$emit('buttonClicked','CATALOG')" class="bg-secondary px-4 py-3 rounded-xl flex items-center gap-2 max-h-[60px] min-w-fit" >
@@ -18,8 +18,10 @@
 </template>
 
 <script setup>
-const emit = defineEmits({
+const scrollTo = (position) => {
 
-})
+  document.documentElement.scrollTo({behavior:"smooth",top:0})
+ 
+}
 </script>
 <style lang="scss" scoped></style>

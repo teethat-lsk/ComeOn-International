@@ -2,6 +2,7 @@
   <div
     class="absolute z-30 rounded-2xl top-[40%] left-[50%] translate-y-[-50%] translate-x-[-50%] min-w-[800px] h-[500px] bg-white"
   >
+    <img @click="$emit('closePopup')" src="~/assets/images/popup/cross.png" alt="cross" class="absolute top-[10px] right-[10px] cursor-pointer">
     <img
       class="absolute w-[300px] top-[-150px] left-[50px]"
       src="~/assets/images/popup/contact-popup-logo.png"
@@ -18,7 +19,7 @@
       <div class="flex gap-5 items-center">
         <img
           src="~/assets/images/popup/line-logo.png"
-          alt=""
+          alt="line-logo"
           class="w-[80px]"
         />
         <span class="text-[48px]">@273cozby</span>
@@ -26,7 +27,7 @@
       <div class="flex gap-5 items-center">
         <img
           src="~/assets/images/popup/phone-logo.png"
-          alt=""
+          alt="phone-logo"
           class="w-[80px]"
         />
         <span class="text-[48px]">065-256-1979</span>
@@ -34,14 +35,14 @@
       <div class="flex gap-5 items-center">
         <img
           src="~/assets/images/popup/mail-logo.png"
-          alt=""
+          alt="mail-logo"
           class="w-[80px]"
         />
         <span class="text-[48px]">sami.comeon@gmail.com</span>
       </div>
     </div>
   </div>
-  <BackDrop class="absolute z-20" />
+  <BackDrop @click="$emit('closePopup')" class="absolute z-20" />
 </template>
 
 <script setup>

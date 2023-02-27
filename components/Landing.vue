@@ -1,6 +1,6 @@
 <template>
-  <div class=" bg-secondary">
-    <h1 class="text-[64px] text-primary-red mb-4">
+  <div id="LANDING" class="px-12 bg-secondary">
+    <h1 id="TOP" class="text-[64px] text-primary-red mb-4">
       COME ON INTERNATIONAL,CO.,LTD. บริษัท คัมออน อินเตอร์เนชั่นแนล จำกัด
     </h1>
     <div class="flex gap-12 justify-center">
