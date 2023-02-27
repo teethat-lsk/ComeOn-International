@@ -1,0 +1,38 @@
+[
+  {
+    "name": "BEARING",
+    "icon": "bearing-icon.png"
+  },
+  {
+    "name": "BELTS",
+    "icon": "belt-icon.png"
+  },
+  {
+    "name": "BOLT & SCREW",
+    "icon": "screw-bolt-icon.png"
+  },
+  {
+    "name": "PROTECTIVE EQUIPMENT",
+    "icon": "protection-icon.png"
+  },
+  {
+    "name": "CAR's PART",
+    "icon": "car-part-icon.png"
+  },
+  {
+    "name": "ELECTRICAL DEVICE",
+    "icon": "electrical-icon.png"
+  },
+  {
+    "name": "HARDWARE TOOL",
+    "icon": "hardware-icon.png"
+  },
+  {
+    "name": "CHEMICAL",
+    "icon": "chemical-icon.png"
+  },
+  {
+    "name": "MEDICINE",
+    "icon": "medicine-icon.png"
+  }
+]

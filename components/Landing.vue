@@ -1,5 +1,5 @@
 <template>
-  <div class="p-12 bg-secondary">
+  <div class=" bg-secondary">
     <h1 class="text-[64px] text-primary-red mb-4">
       COME ON INTERNATIONAL,CO.,LTD. บริษัท คัมออน อินเตอร์เนชั่นแนล จำกัด
     </h1>
@@ -23,8 +23,6 @@
         />
       </div>
     </div>
-    <Divider />
-    <ProductCard v-for="(item,index) in CatalogData " :name="item.name" :index="index%2" />
   </div>
 </template>
 
