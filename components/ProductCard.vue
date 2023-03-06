@@ -18,10 +18,47 @@
           </li>
         </ul>
       </div>
-      <img :src="getUrl(product.image)" alt="product-image" />
+      <div class="self-center">
+        <div class="relative">
+          <div class="relative z-20 top-0 left-0">
+            <img
+              :src="getUrl(product.image)"
+              alt="product-image"
+              class="rounded-xl shadow-lg shadow-black/40"
+            />
+          </div>
+          <div
+            class="absolute top-[50%] translate-y-[-45%] translate-x-[15px]"
+          >
+            <img
+              src="../assets/images/product/even-product-bg.png"
+              alt="even-product-bg"
+              class="rounded-xl"
+            />
+          </div>
+        </div>
+      </div>
     </div>
+
     <div v-if="index == 1" class="flex justify-center gap-[10%]">
-      <img :src="getUrl(product.image)" alt="product-image" />
+      <div class="self-center">
+        <div class="relative">
+          <div class="relative z-20 top-0 left-0">
+            <img
+              :src="getUrl(product.image)"
+              alt="product-image"
+              class="rounded-xl shadow-lg shadow-black/40"
+            />
+          </div>
+          <div class="absolute top-[50%] translate-y-[-45%] translate-x-[-15px]">
+            <img
+              src="../assets/images/product/odd-product-bg.png"
+              alt="odd-product-bg"
+              class="rounded-xl"
+            />
+          </div>
+        </div>
+      </div>
       <div>
         <h1 class="text-[64px]">
           {{ product.title }}

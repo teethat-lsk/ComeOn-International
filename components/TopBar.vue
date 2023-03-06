@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="flex items-center bg-primary-red w-screen h-max gap-20 py-5 px-5 z-10 shadow-sm shadow-black/60"
+    class="flex items-center bg-primary-red w-screen h-max gap-20 py-5 px-5 z-50 shadow-sm shadow-black/60"
   >
     <div class="flex-1 justify-start items-center">
       <img
