@@ -1,11 +1,10 @@
 <template>
-  <div class="w-screen h-screen bg-black opacity-60"></div>
+  <div>
+    <slot />
+    <div @click="$emit('closePopup')" class="w-screen h-screen bg-black opacity-60"></div>
+  </div>
 </template>
 
-<script setup>
-const props = defineProps({
-  isActive: { type: Boolean, default: false },
-});
-</script>
+<script setup></script>
 
 <style lang="scss" scoped></style>

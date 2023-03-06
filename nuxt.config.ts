@@ -8,10 +8,4 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  vite:{
-    server: {
-      hmr: false
-    }
-  }
-
 });

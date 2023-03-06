@@ -7,9 +7,9 @@
       "ลูกปืนรถยนต์",
       "เม็ดลูกปืน",
       "จารบีลูกปืน",
-      "ลูกปื้นปั๊มน้ำ"
+      "ลูกปืนปั๊มน้ำ"
     ],
-    "image": ""
+    "image": "bearing-product.png"
   },
   {
     "title": "Belts",
@@ -23,10 +23,10 @@
       "สายพานลำเลียง PVC",
       "สายพาน Rib belts"
     ],
-    "image": ""
+    "image": "belt-product.png"
   },
   {
-    "titile": "Bolt & Screw",
+    "title": "Bolt & Screw",
     "details": [
       "น็อตมิลขาว",
       "น็อตมิลดำ",
@@ -36,10 +36,10 @@
       "เหล็กรัดท่อ",
       "สลิง"
     ],
-    "image": ""
+    "image": "bolt-product.png"
   },
   {
-    "title": "Protective Equipment",
+    "title": "Protective Tools",
     "details": [
       "หมวกและรองเท้าเซฟตี้",
       "หน้ากากอนามัย & Face Shield",
@@ -51,14 +51,14 @@
       "ถังดับเพลิง",
       "อุปกรณ์ป้องกันเสียง"
     ],
-    "image": ""
+    "image": "protective-product.png"
   },
   {
     "title": "Car's Part",
     "details": [
       "ไส้กรองต่างๆ",
       "น้ำมันและของเหลว",
-      "อุปกรณืงานเบรค",
+      "อุปกรณ์งานเบรค",
       "ลูกหมาก",
       "โช้คอัพและลูกยาง",
       "ท่อและแป๊ป",
@@ -70,10 +70,10 @@
       "อุปกรณ์เซฟตี้งานรถยนต์",
       "น้ำยาทำความสะอาด"
     ],
-    "image": ""
+    "image": "car-product.png"
   },
   {
-    "title": "Electrical Device",
+    "title": "Electrical Devices",
     "details": [
       "สายไฟ NYY/THW",
       "ท่อกระดูกงู",
@@ -87,7 +87,7 @@
       "ฟิวส์",
       "เทปพันสายไฟ"
     ],
-    "image": ""
+    "image": "electrical-product.png"
   },
   {
     "title": "Hardware Tools",
@@ -106,7 +106,7 @@
       "เวอเนียร์",
       "กล่องเครื่องมือ"
     ],
-    "image": ""
+    "image": "hardware-product.png"
   },
   {
     "title": "Chemical",
@@ -122,7 +122,7 @@
       "Calcium Hydroxide",
       "Potassium Nitrate"
     ],
-    "image":""
+    "image": "chemical-product.png"
   },
   {
     "title": "Medicine",
@@ -139,6 +139,6 @@
       "พลาสเตอร์ยา",
       "แอลกอฮอล์/น้ำเกลือ"
     ],
-    "image":""
+    "image": "medicine-product.png"
   }
 ]
