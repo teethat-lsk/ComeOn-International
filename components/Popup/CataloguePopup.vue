@@ -31,7 +31,7 @@
           <span class="font-bold text-lg">or</span>
         </div>
         <button
-          @click="downloadPDF"
+          @click="downloadCatalogue"
           class="bg-secondary h-fit w-min px-[2rem] text-[35px] font-normal flex-grow py-[0.5rem] rounded-md shadow-lg self-center justify-self-center mobile:text-[15px]"
         >
           Download
@@ -52,7 +52,7 @@
 <script setup>
 import BackDrop from "./BackDrop.vue";
 import { getStorage, ref, getDownloadURL } from "firebase/storage";
-import pdf from "@/assets/Come-On International.pdf";
+import pdf from "~/assets/Come-On_International.pdf";
 import Qrcode from "qrcode.vue";
 const downloadURL =
   "https://firebasestorage.googleapis.com/v0/b/come-on-international.appspot.com/o/Come-On%20International.pdf?alt=media&token=2a4c4566-930b-41f9-953b-cb1f23a25ced";
@@ -60,14 +60,14 @@ const props = defineProps({
   isActive: Boolean,
 });
 
-// const downloadCatalogue = () => {
-//   document.getElementById("downloadPDF").click();
-//   const target = document.getElementById("rerenderTarget");
-//   const targetChildrens = target.childNodes;
-//   targetChildrens.forEach((node) => {
-//     target.replaceChild(node);
-//   });
-// };
+const downloadCatalogue = () => {
+  document.getElementById("downloadPDF").click();
+  const target = document.getElementById("rerenderTarget");
+  const targetChildrens = target.childNodes;
+  targetChildrens.forEach((node) => {
+    target.replaceChild(node);
+  });
+};
 
 
 const downloadPDF = () => {
