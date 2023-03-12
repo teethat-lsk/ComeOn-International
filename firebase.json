@@ -1,7 +1,7 @@
 {
-  "function": { "source":".output/servere", "runtime":"nodejs18"},
+  "function": { "source":".output/server", "runtime":"nodejs18"},
   "hosting": {
-    "site":"ComeOn-International",
+    "site":"come-on-international",
     "public": ".output/public",
     "cleanUrls": true,
     "rewrites":[{"source":"**","function":"server"}],

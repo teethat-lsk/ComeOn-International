@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "come-on-international"
-  }
+  },
+  "targets": {
+    "come-on-international": {
+      "hosting": {
+        "nuxtapp": [
+          "come-on-international"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
